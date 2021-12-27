@@ -1,0 +1,23 @@
+{
+  "nome": "Jonatas",
+  "idade": 23,
+  "genero": "masculino",
+  "localizacao": {
+    "latitude": "123123",
+    "longitude": "2222222",
+    "nome_galaxia": "cosmos",
+    "nome_base": "aeron"
+  },
+  "inventario": {
+    "itens": [
+      {
+        "nome": "arma",
+        "pontos": 3
+      },
+      {
+        "nome": "agua",
+        "pontos": 2
+      }
+    ]
+  }
+}
