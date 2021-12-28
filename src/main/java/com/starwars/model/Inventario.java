@@ -7,7 +7,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -29,7 +31,7 @@ public class Inventario {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private UUID uuid;
 
-  @OneToMany(mappedBy = "inventario")
+  @OneToMany(mappedBy = "inventario", cascade = CascadeType.PERSIST)
   private List<Item> itens;
 
   @OneToOne

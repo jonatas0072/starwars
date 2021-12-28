@@ -29,9 +29,7 @@ public class Item {
 
   private String nome;
 
-  private int pontos;
-
   @ManyToOne
-  @JoinColumn(name = "id_inventario", nullable = false)
+  @JoinColumn(name = "id_inventario")
   private Inventario inventario;
 }
